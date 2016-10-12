@@ -194,6 +194,7 @@ a.social-btn {
 }
 
 .sign-in-form {
+  position: relative;
     padding-bottom: 100px;
     background-image: -webkit-linear-gradient(270deg, #000, #000);
     background-image: linear-gradient(180deg, #000, #000);
