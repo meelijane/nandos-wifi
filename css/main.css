@@ -1,10 +1,12 @@
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
+
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -15,6 +17,7 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -34,6 +37,7 @@ html {
     text-shadow: none;
 }
 
+
 /*
  * A better looking default horizontal rule
  */
@@ -47,20 +51,17 @@ hr {
     padding: 0;
 }
 
+
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
+audio, canvas, iframe, img, svg, video {
     vertical-align: middle;
 }
+
 
 /*
  * Remove default fieldset styles.
@@ -72,6 +73,7 @@ fieldset {
     padding: 0;
 }
 
+
 /*
  * Allow only vertical resizing of textareas.
  */
@@ -79,6 +81,7 @@ fieldset {
 textarea {
     resize: vertical;
 }
+
 
 /* ==========================================================================
    Browser Upgrade Prompt
@@ -91,116 +94,110 @@ textarea {
     padding: 0.2em 0;
 }
 
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-   @font-face {
-     font-family: 'Nandos hand alt';
-     src: url('../fonts/nandos-hand-alt.woff2') format('undefined'), url('../fonts/nandos-hand-alt.eot') format('embedded-opentype'), url('../fonts/nandos-hand-alt.woff') format('woff'), url('../fonts/nandos-hand-alt.ttf') format('truetype'), url('../fonts/nandos-hand-alt.otf') format('opentype');
-     font-weight: 400;
-     font-style: normal;
-   }
-   @font-face {
-     font-family: 'Icomoon';
-     src: url('../fonts/icomoon.woff2') format('undefined'), url('../fonts/icomoon.eot') format('embedded-opentype'), url('../fonts/icomoon.woff') format('woff'), url('../fonts/icomoon.ttf') format('truetype'), url('../fonts/icomoon.svg') format('svg');
-     font-weight: 400;
-     font-style: normal;
-   }
-   @font-face {
-     font-family: 'Dinnextw01regular';
-     src: url('../fonts/DINNextW01Regular.woff2') format('undefined'), url('../fonts/DINNextW01Regular.eot') format('embedded-opentype'), url('../fonts/DINNextW01Regular.woff') format('woff'), url('../fonts/DINNextW01Regular.ttf') format('truetype'), url('../fonts/DINNextW01Regular.svg') format('svg');
-     font-weight: 400;
-     font-style: normal;
-   }
-   @font-face {
-     font-family: 'Dinnextw01medium';
-     src: url('../fonts/DINNextW01Medium.woff2') format('undefined'), url('../fonts/DINNextW01Medium.eot') format('embedded-opentype'), url('../fonts/DINNextW01Medium.woff') format('woff'), url('../fonts/DINNextW01Medium.ttf') format('truetype'), url('../fonts/DINNextW01Medium.svg') format('svg');
-     font-weight: 400;
-     font-style: normal;
-   }
-   @font-face {
-     font-family: 'Dinnextw01bold';
-     src: url('../fonts/DINNextW01Bold.woff2') format('undefined'), url('../fonts/DINNextW01Bold.eot') format('embedded-opentype'), url('../fonts/DINNextW01Bold.woff') format('woff'), url('../fonts/DINNextW01Bold.ttf') format('truetype'), url('../fonts/DINNextW01Bold.svg') format('svg');
-     font-weight: 400;
-     font-style: normal;
-   }
 
-  .floaty {
-    text-align: center;
-  }
+@font-face {
+    font-family: 'Nandos hand alt';
+    src: url('../fonts/nandos-hand-alt.woff2') format('undefined'), url('../fonts/nandos-hand-alt.eot') format('embedded-opentype'), url('../fonts/nandos-hand-alt.woff') format('woff'), url('../fonts/nandos-hand-alt.ttf') format('truetype'), url('../fonts/nandos-hand-alt.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
 
-  .cta {
+@font-face {
+    font-family: 'Icomoon';
+    src: url('../fonts/icomoon.woff2') format('undefined'), url('../fonts/icomoon.eot') format('embedded-opentype'), url('../fonts/icomoon.woff') format('woff'), url('../fonts/icomoon.ttf') format('truetype'), url('../fonts/icomoon.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Dinnextw01regular';
-  }
+    src: url('../fonts/DINNextW01Regular.woff2') format('undefined'), url('../fonts/DINNextW01Regular.eot') format('embedded-opentype'), url('../fonts/DINNextW01Regular.woff') format('woff'), url('../fonts/DINNextW01Regular.ttf') format('truetype'), url('../fonts/DINNextW01Regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
 
-   .logo {
-     display: block;
-     margin: 40px auto;
-   }
+@font-face {
+    font-family: 'Dinnextw01medium';
+    src: url('../fonts/DINNextW01Medium.woff2') format('undefined'), url('../fonts/DINNextW01Medium.eot') format('embedded-opentype'), url('../fonts/DINNextW01Medium.woff') format('woff'), url('../fonts/DINNextW01Medium.ttf') format('truetype'), url('../fonts/DINNextW01Medium.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
 
-   .hero {
-     width: 100%;
-     background-color: #000;
-   }
+@font-face {
+    font-family: 'Dinnextw01bold';
+    src: url('../fonts/DINNextW01Bold.woff2') format('undefined'), url('../fonts/DINNextW01Bold.eot') format('embedded-opentype'), url('../fonts/DINNextW01Bold.woff') format('woff'), url('../fonts/DINNextW01Bold.ttf') format('truetype'), url('../fonts/DINNextW01Bold.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
 
-   .sign-in-form {
-     padding-bottom: 100px;
-     background-image: -webkit-linear-gradient(270deg, #000, #000);
-     background-image: linear-gradient(180deg, #000, #000);
-   }
+.floaty {
+    text-align: center;
+}
 
-   .sign-in-free {
-     padding-top: 50px;
-     padding-bottom: 50px;
-     font-family: 'Nandos hand alt', sans-serif;
-     color: #fff;
-     font-size: 40px;
-     line-height: 20px;
-     text-align: center;
-   }
+.cta {
+    font-family: 'Dinnextw01regular';
+}
 
-   .social.button.facebook {
-     display: block;
-     width: 120px;
-     margin-right: auto;
-     margin-bottom: 20px;
-     margin-left: auto;
-     background-color: #3b5998;
-     font-family: Dinnextw01regular, sans-serif;
-     line-height: 20px;
-     text-align: center;
-   }
+.logo {
+    display: block;
+    margin: 40px auto;
+}
 
-   .social.button.twitter {
-     display: block;
-     width: 120px;
-     margin-right: auto;
-     margin-bottom: 20px;
-     margin-left: auto;
-     background-color: #55acee;
-     font-family: Dinnextw01regular, sans-serif;
-     text-align: center;
-   }
+.hero {
+    width: 100%;
+    background-color: #000;
+}
 
-   .social.button.instagram {
-     display: block;
-     width: 120px;
-     margin-right: auto;
-     margin-left: auto;
-     background-color: #fb3958;
-     font-family: Dinnextw01regular, sans-serif;
-     text-align: center;
-   }
+.sign-in-form {
+    padding-bottom: 100px;
+    background-image: -webkit-linear-gradient(270deg, #000, #000);
+    background-image: linear-gradient(180deg, #000, #000);
+}
 
-   .lil-arrow {
-     position: absolute;
-   }
+.sign-in-free {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Nandos hand alt', sans-serif;
+    color: #fff;
+    font-size: 40px;
+    line-height: 20px;
+    text-align: center;
+}
 
+.facebook:after, .facebook span {
+  background-color: #3b5998!important;
+}
+.facebook span:before, .facebook span:after {
+  border-color: transparent transparent #3b5998!important;
+}
+
+.insta:after, .insta span {
+  background-color: #8a3ab9!important;
+}
+.insta span:before, .insta span:after {
+  border-color: transparent transparent #8a3ab9!important;
+}
+
+.twitter:after, .twitter span {
+  background-color: #1da1f2!important;
+}
+.twitter span:before, .twitter span:after {
+  border-color: transparent transparent #1da1f2!important;
+}
+
+.lil-arrow {
+    position: absolute;
+}
 
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
 
 /*
  * Hide visually and from screen readers
@@ -209,6 +206,7 @@ textarea {
 .hidden {
     display: none !important;
 }
+
 
 /*
  * Hide only visually, but have it available for screen readers:
@@ -226,14 +224,14 @@ textarea {
     width: 1px;
 }
 
+
 /*
  * Extends the .visuallyhidden class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;
@@ -242,6 +240,7 @@ textarea {
     width: auto;
 }
 
+
 /*
  * Hide visually and from screen readers, but maintain layout
  */
@@ -249,6 +248,7 @@ textarea {
 .invisible {
     visibility: hidden;
 }
+
 
 /*
  * Clearfix: contain floats
@@ -262,15 +262,17 @@ textarea {
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+.clearfix:before, .clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .clearfix:after {
     clear: both;
 }
+
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -282,12 +284,10 @@ textarea {
     /* Style adjustments for viewports that meet the condition */
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
+
 
 /* ==========================================================================
    Print styles.
@@ -296,74 +296,52 @@ textarea {
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after,
-    *:first-letter,
-    *:first-line {
+    *, *:before, *:after, *:first-letter, *:first-line {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        color: #000 !important;
+        /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
-    a,
-    a:visited {
+    a, a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
+    a[href^="#"]:after, a[href^="javascript:"]:after {
         content: "";
     }
-
-    pre,
-    blockquote {
+    pre, blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
-
-    tr,
-    img {
+    tr, img {
         page-break-inside: avoid;
     }
-
     img {
         max-width: 100% !important;
     }
-
-    p,
-    h2,
-    h3 {
+    p, h2, h3 {
         orphans: 3;
         widows: 3;
     }
-
-    h2,
-    h3 {
+    h2, h3 {
         page-break-after: avoid;
     }
 }
