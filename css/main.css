@@ -134,6 +134,11 @@ textarea {
     font-style: normal;
 }
 
+
+* {
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
 .floaty {
     text-align: center;
 }
@@ -144,12 +149,48 @@ textarea {
 
 .logo {
     display: block;
-    margin: 40px auto;
+    margin: 30px auto;
+    width: 150px;
+    height: auto;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .logo {
+    margin: 10px auto;
+  }
+}
+
+.social-btn span {
+  font-family: 'Dinnextw01regular';
+  color: #fff;
+  padding: 10px 20px!important;
+  display: block;
+  box-sizing: border-box!important;
+}
+
+a.social-btn {
+  margin: 0 auto;
+  max-width: 260px;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  background-color: white;
+}
+
+.social-btn:hover {
+  opacity: 0.7;
 }
 
 .hero {
     width: 100%;
     background-color: #000;
+    margin-top: 54px;
+
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .hero {
+    margin-top: 34px;
+  }
 }
 
 .sign-in-form {
@@ -159,8 +200,8 @@ textarea {
 }
 
 .sign-in-free {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     font-family: 'Nandos hand alt', sans-serif;
     color: #fff;
     font-size: 40px;
@@ -168,29 +209,51 @@ textarea {
     text-align: center;
 }
 
-.facebook:after, .facebook span {
+.floaty {
+  margin-bottom: 20px;
+}
+
+.insta:before, .twitter:before, .facebook:before {
+  font-size: 20px;
+  font-family: 'icomoon';
+  position: absolute;
+  left: 10px;
+  top: 7px;
+  color: #fff;
+}
+
+.facebook span {
   background-color: #3b5998!important;
 }
-.facebook span:before, .facebook span:after {
-  border-color: transparent transparent #3b5998!important;
+
+.facebook:before {
+  content: '\f09a';
 }
 
-.insta:after, .insta span {
+.insta span {
   background-color: #8a3ab9!important;
 }
-.insta span:before, .insta span:after {
-  border-color: transparent transparent #8a3ab9!important;
+
+.insta:before {
+  content: '\f083';
 }
 
-.twitter:after, .twitter span {
+.twitter span {
   background-color: #1da1f2!important;
 }
-.twitter span:before, .twitter span:after {
-  border-color: transparent transparent #1da1f2!important;
+.twitter:before {
+  content: '\f099';
 }
 
 .lil-arrow {
     position: absolute;
+}
+
+.logo-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
 }
 
 
