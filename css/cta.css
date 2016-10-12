@@ -1,0 +1,193 @@
+/**
+ * Call to Actions
+ */
+.cta {
+  padding: 25px 25px 5px 35px;
+  padding: convert-length(25px, rem) convert-length(25px, rem) convert-length(5px, rem) convert-length(35px, rem);
+  font-size: 16px;
+  font-size: convert-length(16px, rem);
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  height: auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+}
+.cta:before {
+  position: absolute;
+  top: 16px;
+  left: 13px;
+  width: 0;
+  height: 0;
+  border-width: 12px 8px 0;
+  border-style: solid;
+  border-color: #FF00B4 transparent transparent;
+  content: "";
+  transform: translateY(0);
+  backface-visibility: hidden;
+}
+.cta:after {
+  position: absolute;
+  bottom: 0;
+  left: -1%;
+  display: block;
+  width: 102%;
+  height: calc(100% - 30px);
+  content: "";
+  background: #01E2C2;
+  backface-visibility: hidden;
+}
+.cta:hover:after {
+  width: 110%;
+  background: #95E8DB;
+}
+.cta:hover:before {
+  animation: cta-bounce 0.5s infinite alternate;
+}
+.cta:hover span {
+  background-color: #95E8DB;
+  transform: translate(0, 0);
+}
+.cta:hover span:before, .cta:hover span:after {
+  border-color: transparent transparent #95E8DB;
+  transform: translate(0, 0);
+}
+.cta span {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  min-width: 70px;
+  height: auto;
+  padding: 0;
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: #000000;
+  background-color: #01E2C2;
+  text-align: center;
+}
+.cta span:before, .cta span:after {
+  position: absolute;
+  top: -10px;
+  z-index: -1;
+  display: inline-block;
+  height: 4px;
+  border-width: 0 8px 12px;
+  border-style: solid;
+  border-color: transparent transparent #01E2C2;
+  content: "";
+  backface-visibility: hidden;
+}
+.cta span:before {
+  right: calc(100% + 15px);
+  width: 50%;
+}
+.cta span:after {
+  left: -14px;
+  width: 200%;
+}
+
+button.cta {
+  padding: 20px 0 0;
+  padding: convert-length(20px, rem) 0 0;
+  width: 126px;
+  min-width: 126px;
+  height: 50px;
+  background: none;
+}
+button.cta:before {
+  top: 14px;
+  left: 10px;
+}
+button.cta:after {
+  height: calc(100% - 30px);
+}
+button.cta span {
+  top: auto;
+  bottom: 0;
+  width: 64px;
+  min-width: 0;
+  text-align: center;
+}
+button.cta span:before, button.cta span:after {
+  top: -8px;
+  width: 400%;
+}
+button.cta span:before {
+  right: calc(100% + 12px);
+}
+button.cta span:after {
+  left: -12px;
+}
+
+.cta--secondary:after {
+  background: #FFFF00;
+}
+.cta--secondary:hover span {
+  background-color: #FFFF99;
+}
+.cta--secondary:hover span:before, .cta--secondary:hover span:after {
+  border-color: transparent transparent #FFFF99;
+}
+.cta--secondary:hover:after {
+  background: #FFFF99;
+}
+.cta--secondary span {
+  background-color: #FFFF00;
+}
+.cta--secondary span:before, .cta--secondary span:after {
+  border-color: transparent transparent #FFFF00;
+}
+
+.cta--tertiary:after {
+  background: #FF1C4A;
+}
+.cta--tertiary:hover span {
+  background-color: #FF4F73;
+}
+.cta--tertiary:hover span:before, .cta--tertiary:hover span:after {
+  border-color: transparent transparent #FF4F73;
+}
+.cta--tertiary:hover:after {
+  background: #FF4F73;
+}
+.cta--tertiary span {
+  background-color: #FF1C4A;
+}
+.cta--tertiary span:before, .cta--tertiary span:after {
+  border-color: transparent transparent #FF1C4A;
+}
+
+@keyframes cta-bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, -2px, 0);
+  }
+}
+.app-store {
+  width: 233px;
+  width: convert-length(233px, rem);
+  height: 69px;
+  height: convert-length(69px, rem);
+  display: inline-block;
+  background: url("../images/fabric/front/apple_badge.png") no-repeat top left;
+  background-size: cover;
+  text-indent: -9999px;
+}
+.app-store + .google-play {
+  margin: 30px 40px;
+  margin: convert-length(30px, rem) convert-length(40px, rem);
+}
+
+.google-play {
+  width: 198px;
+  width: convert-length(198px, rem);
+  height: 69px;
+  height: convert-length(69px, rem);
+  display: inline-block;
+  background: url("../images/fabric/front/google_badge.png") no-repeat top left;
+  background-size: cover;
+  text-indent: -9999px;
+}
