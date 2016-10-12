@@ -160,6 +160,14 @@ textarea {
   }
 }
 
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+  .logo {
+    margin: 10px auto;
+  }
+}
+
+
 .social-btn span {
   font-family: 'Dinnextw01regular';
   color: #fff;
@@ -188,6 +196,12 @@ a.social-btn {
 
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .hero {
+    margin-top: 34px;
+  }
+}
+
+@media only screen and (min-width : 321px) {
   .hero {
     margin-top: 34px;
   }
