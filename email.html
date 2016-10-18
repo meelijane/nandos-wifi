@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="css/steps.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body>
+    <body class="email">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -29,18 +29,36 @@
         <div class="sign-in-form">
           <div class="w-container">
             <ul class="steps">
-                <li class="active"><span>1</span></li>
-                <li><span>2</span></li>
+                <li><span>1</span></li>
+                <li class="active"><span>2</span></li>
                 <li><span></span></li>
             </ul>
-            <div class="sign-in-free">Sign in free with</div>
+            <div class="sign-in-free">Sign in via email</div>
           </div>
-          <div class="floaty"><a class="social-btn facebook" href=""><span>FACEBOOK CONNECT</span></a>
+
+          <div class="floaty">
+            <label class="form-element__label">First name</label>
+            <input type="text">
           </div>
-          <div class="floaty"><a class="social-btn insta" href=""><span>INSTAGRAM</span></a>
+          <div class="floaty">
+            <label class="form-element__label">Last name</label>
+            <input type="text" >
           </div>
-          <div class="or">or</div>
-          <div class="floaty"><a class="cta" href="/email.html"><span>VIA EMAIL</span></a></div>
+          <div class="floaty">
+            <label class="form-element__label">Email</label>
+            <input type="text">
+        </div>
+        <div class="floaty">
+          <div class="checkbox">
+            <input type="checkbox" name="periperks"><label for="periperks"> Tell me more about offers and exclusive events from Nando’s PERi-Perks</label><br />
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" name="terms"><label for="terms"> I agree to Terms of Service and Privacy Policy</label>
+          </div>
+        </div>
+        <div class="floaty">
+          <a class="cta" href=""><span>Log in</span></a>
+          <a class="cancel" href=""><span>Cancel</span></a>
         </div>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

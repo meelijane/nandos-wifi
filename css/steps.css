@@ -1,0 +1,116 @@
+/**
+ * Component - Steps
+ * Renders out a stepper - can either have content associated with step or not.
+ */
+.steps {
+  margin: 0 auto 80px;
+  margin: 0 auto convert-length(80px, rem);
+  display: block;
+  transform: rotate(-3deg);
+  text-align: center;
+}
+.steps li {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.steps li span {
+  font-size: 15px;
+  font-size: convert-length(15px, rem);
+  padding-top: 4px;
+  padding-top: convert-length(4px, rem);
+  margin: 0 15px;
+  margin: 0 convert-length(15px, rem);
+  display: block;
+  position: relative;
+  z-index: 10;
+  width: 28px;
+  height: 28px;
+  color: #FF00B4;
+  font-family: Din Next W01, Helvetica, Geneva, Arial, sans-serif;
+  text-align: center;
+  border: 2px solid #FF00B4;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: all .3s ease-out;
+}
+.steps li:first-child:after, .steps.active-step:after {
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  z-index: 1;
+  content: "";
+  height: 0px;
+  width: 100%;
+  border-bottom: 2px solid #FF00B4;
+}
+.steps li:last-child span, .steps.last-step span {
+  width: 28px;
+  height: 28px;
+  padding-top: 0px;
+}
+.steps li:last-child span:after, .steps.last-step span:after {
+  font-size: 12px;
+  font-size: convert-length(12px, rem);
+  padding: 6px 0;
+  padding: convert-length(6px, rem) 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  content: "\e90a";
+  font-family: "icomoon";
+  text-align: center;
+  color: #FF00B4;
+  line-height: 1;
+}
+.steps li:last-child:after, .steps.last-step:after {
+  margin-left: -50%;
+  margin-left: -50%;
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: 0;
+  content: "";
+  height: 0px;
+  width: 100%;
+  border-bottom: 2px solid #FF00B4;
+}
+
+/*********
+// Stage 1
+*********/
+.page-registration-stage-1 .steps li:first-child span {
+  color: #fff;
+  background: #FF00B4;
+}
+
+/*********
+// Stage 2
+*********/
+.page-registration-stage-2 .steps li:first-child span {
+  color: #fff;
+  background: #FF00B4;
+}
+.page-registration-stage-2 .steps li:nth-child(2) span, .page-registration-stage-2 .steps.active-step span {
+  color: #fff;
+  background: #FF00B4;
+}
+
+/*********
+// Stage 3
+*********/
+.page-registration-stage-3 .steps li:first-child span, .page-registration-stage-3 .steps li:nth-child(2) span {
+  color: #fff;
+  background: #FF00B4;
+}
+.page-registration-stage-3 .steps li:last-child span, .page-registration-stage-3 .steps.last-step span, .page-registration-stage-3 .steps.active-step span {
+  color: #fff;
+  background: #FF00B4;
+}
+.page-registration-stage-3 .steps li:last-child span:after, .page-registration-stage-3 .steps.last-step span:after, .page-registration-stage-3 .steps.active-step span:after {
+  color: #fff;
+}
