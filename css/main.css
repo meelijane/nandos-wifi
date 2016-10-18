@@ -322,7 +322,13 @@ html {
     background-size: auto 100%;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (max-width: 800px) {
+    .sign-in-form:after {
+        background-image: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
     .sign-in-form:after {
         background-image: none;
     }
@@ -417,6 +423,10 @@ html {
 
 .steps li.active span:after {
   color: white!important;
+}
+
+.steps li span {
+  font-family: 'Dinnextw01regular', Helvetica, Geneva, Arial, sans-serif!important;
 }
 
 .sign-in-free.welcome {
