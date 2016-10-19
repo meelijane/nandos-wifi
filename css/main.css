@@ -297,7 +297,7 @@ html {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #dcdcdc;
+    background-color: #fff;
     z-index: 1;
 }
 
@@ -423,6 +423,10 @@ html {
 
 .steps li.active span:after {
   color: white!important;
+}
+
+.steps li span {
+  box-sizing: border-box;
 }
 
 .steps li span {
